@@ -6,4 +6,4 @@
 // 1. Create a new AppSecrets.swift
 // 2. Declare the OpenWeatherMapKey constant with your own API key from https://openweathermap.org/
 
-// let OpenWeatherMapApiKey: String = "Your API key"
+// let openWeatherMapApiKey: String = "Your API key"
