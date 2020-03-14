@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		411F4C41241CE85D00D8ACF8 /* AppSecrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411F4C40241CE85D00D8ACF8 /* AppSecrets.swift */; };
+		411F4C43241CE8D100D8ACF8 /* AppSecrets.example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411F4C42241CE8D100D8ACF8 /* AppSecrets.example.swift */; };
 		41C928EE241CC68F00893614 /* WeatherApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 41C928EC241CC68F00893614 /* WeatherApi.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		82245BB5ECBB3EBDCC5D2E3F /* Pods_WeatherApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A2BE34AE3B167F6FBCEF762 /* Pods_WeatherApi.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3A2BE34AE3B167F6FBCEF762 /* Pods_WeatherApi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeatherApi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		411F4C40241CE85D00D8ACF8 /* AppSecrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSecrets.swift; sourceTree = "<group>"; };
+		411F4C42241CE8D100D8ACF8 /* AppSecrets.example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSecrets.example.swift; sourceTree = "<group>"; };
 		41C928E9241CC68F00893614 /* WeatherApi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WeatherApi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		41C928EC241CC68F00893614 /* WeatherApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeatherApi.h; sourceTree = "<group>"; };
 		41C928ED241CC68F00893614 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -65,6 +69,8 @@
 			children = (
 				41C928EC241CC68F00893614 /* WeatherApi.h */,
 				41C928ED241CC68F00893614 /* Info.plist */,
+				411F4C40241CE85D00D8ACF8 /* AppSecrets.swift */,
+				411F4C42241CE8D100D8ACF8 /* AppSecrets.example.swift */,
 			);
 			path = WeatherApi;
 			sourceTree = "<group>";
@@ -121,6 +127,7 @@
 				TargetAttributes = {
 					41C928E8241CC68F00893614 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -182,6 +189,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				411F4C41241CE85D00D8ACF8 /* AppSecrets.swift in Sources */,
+				411F4C43241CE8D100D8ACF8 /* AppSecrets.example.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +321,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7FAA19663CF7E07C9866D084 /* Pods-WeatherApi.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -328,6 +338,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.romangl.WeatherApi;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -337,6 +348,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4D7772802775890C8E03A54A /* Pods-WeatherApi.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
