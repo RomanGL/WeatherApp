@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		411F4C41241CE85D00D8ACF8 /* AppSecrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411F4C40241CE85D00D8ACF8 /* AppSecrets.swift */; };
 		411F4C43241CE8D100D8ACF8 /* AppSecrets.example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411F4C42241CE8D100D8ACF8 /* AppSecrets.example.swift */; };
+		418DA17D241E2491006792A5 /* WeatherCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418DA17C241E2491006792A5 /* WeatherCoordinate.swift */; };
+		418DA17F241E7096006792A5 /* WeatherShortInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418DA17E241E7095006792A5 /* WeatherShortInfo.swift */; };
+		418DA181241E7633006792A5 /* WeatherInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418DA180241E7633006792A5 /* WeatherInfo.swift */; };
+		418DA183241E7681006792A5 /* WeatherMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418DA182241E7681006792A5 /* WeatherMain.swift */; };
+		418DA185241E7A15006792A5 /* WeatherWind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418DA184241E7A15006792A5 /* WeatherWind.swift */; };
+		418DA187241E7B88006792A5 /* WeatherClouds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418DA186241E7B88006792A5 /* WeatherClouds.swift */; };
+		418DA189241E7F22006792A5 /* WeatherDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418DA188241E7F22006792A5 /* WeatherDetails.swift */; };
 		41C928EE241CC68F00893614 /* WeatherApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 41C928EC241CC68F00893614 /* WeatherApi.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		82245BB5ECBB3EBDCC5D2E3F /* Pods_WeatherApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A2BE34AE3B167F6FBCEF762 /* Pods_WeatherApi.framework */; };
 /* End PBXBuildFile section */
@@ -17,6 +24,13 @@
 		3A2BE34AE3B167F6FBCEF762 /* Pods_WeatherApi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeatherApi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		411F4C40241CE85D00D8ACF8 /* AppSecrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSecrets.swift; sourceTree = "<group>"; };
 		411F4C42241CE8D100D8ACF8 /* AppSecrets.example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSecrets.example.swift; sourceTree = "<group>"; };
+		418DA17C241E2491006792A5 /* WeatherCoordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCoordinate.swift; sourceTree = "<group>"; };
+		418DA17E241E7095006792A5 /* WeatherShortInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherShortInfo.swift; sourceTree = "<group>"; };
+		418DA180241E7633006792A5 /* WeatherInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInfo.swift; sourceTree = "<group>"; };
+		418DA182241E7681006792A5 /* WeatherMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherMain.swift; sourceTree = "<group>"; };
+		418DA184241E7A15006792A5 /* WeatherWind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherWind.swift; sourceTree = "<group>"; };
+		418DA186241E7B88006792A5 /* WeatherClouds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherClouds.swift; sourceTree = "<group>"; };
+		418DA188241E7F22006792A5 /* WeatherDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetails.swift; sourceTree = "<group>"; };
 		41C928E9241CC68F00893614 /* WeatherApi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WeatherApi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		41C928EC241CC68F00893614 /* WeatherApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeatherApi.h; sourceTree = "<group>"; };
 		41C928ED241CC68F00893614 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -46,6 +60,20 @@
 			path = ../Pods;
 			sourceTree = "<group>";
 		};
+		418DA17B241E240F006792A5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				418DA180241E7633006792A5 /* WeatherInfo.swift */,
+				418DA17C241E2491006792A5 /* WeatherCoordinate.swift */,
+				418DA17E241E7095006792A5 /* WeatherShortInfo.swift */,
+				418DA182241E7681006792A5 /* WeatherMain.swift */,
+				418DA184241E7A15006792A5 /* WeatherWind.swift */,
+				418DA186241E7B88006792A5 /* WeatherClouds.swift */,
+				418DA188241E7F22006792A5 /* WeatherDetails.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		41C928DF241CC68F00893614 = {
 			isa = PBXGroup;
 			children = (
@@ -67,6 +95,7 @@
 		41C928EB241CC68F00893614 /* WeatherApi */ = {
 			isa = PBXGroup;
 			children = (
+				418DA17B241E240F006792A5 /* Models */,
 				41C928EC241CC68F00893614 /* WeatherApi.h */,
 				41C928ED241CC68F00893614 /* Info.plist */,
 				411F4C40241CE85D00D8ACF8 /* AppSecrets.swift */,
@@ -177,7 +206,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\" --config \"../.swiftlint.yml\"\n";
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\" --config \"../swiftlint.yml\"\n";
 		};
 		517B3759D200BF4E591E7CAB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -208,7 +237,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				418DA187241E7B88006792A5 /* WeatherClouds.swift in Sources */,
 				411F4C41241CE85D00D8ACF8 /* AppSecrets.swift in Sources */,
+				418DA17F241E7096006792A5 /* WeatherShortInfo.swift in Sources */,
+				418DA189241E7F22006792A5 /* WeatherDetails.swift in Sources */,
+				418DA17D241E2491006792A5 /* WeatherCoordinate.swift in Sources */,
+				418DA185241E7A15006792A5 /* WeatherWind.swift in Sources */,
+				418DA183241E7681006792A5 /* WeatherMain.swift in Sources */,
+				418DA181241E7633006792A5 /* WeatherInfo.swift in Sources */,
 				411F4C43241CE8D100D8ACF8 /* AppSecrets.example.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -11,7 +11,6 @@ target :Weather do
 
   pod 'SwiftLint', '~> 0.39.1'
   pod 'Alamofire', '~> 5.0'
-  pod 'SwiftyJSON', '~> 4.0'
 end
 
 target :WeatherApi do
